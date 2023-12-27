@@ -1,0 +1,11 @@
+Package: ProtestsAsStrategicGames
+Type: Package
+Title: Protests as Strategic Games - An interactive Analysis in R
+Version: 0.1
+Date: 2023-27-12
+Author: Robert Laetsch
+Maintainer: Robert Laetsch <ro.lae@web.de>
+Description: RTutor Problem exploring the strategic nature of protest participation.
+License: Creative Commons (CC BY-SA)
+	Package code: GPL >= 2.0
+Depends: RTutor, tidyr, haven, ggplot2, dplyr, modelsummary, kableExtra, glueformula, estimatr, gridExtra
