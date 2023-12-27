@@ -1,0 +1,19 @@
+```{r}
+install.packages("RTutor",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
+
+if (!require(devtools))
+  install.packages("devtools")
+
+devtools::install_github("RobertLaetsch/RTutorProtestsAsStrategicGames")
+```
+
+```{r}
+library(ProtestsAsStrategicGames)
+
+# Adapt your working directory to an existing folder
+setwd("/Users/robert/Desktop/test")
+# Adapt your user name
+run.ps(user.name="Jon Doe", package="ProtestsAsStrategicGames",
+       auto.save.code=TRUE, clear.user=FALSE)
+```
+
