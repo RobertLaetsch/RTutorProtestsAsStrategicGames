@@ -30,7 +30,7 @@ The RTutor package has a function `rtutor.package.skel` that creates a package s
 ```{r eval=FALSE}
 
   # Working folder that contains your solution file
-  setwd("/Users/robert/Dokumente/BA/ps/Protests-as-Strategic-Games-Problemset")
+  setwd("/Users/robert/Dokumente/BA/ps/ps")
 
  #set required libraries
   libs = c("tidyr", "haven","ggplot2", "dplyr", "modelsummary","kableExtra", "glueformula", "estimatr", "gridExtra")

@@ -234,6 +234,7 @@ The experiment is designed to isolate the causal effect of variation in beliefs 
 
 ![Experimental Design](Experimental_Design.jpeg){width=80%, height = 80%}
 
+
 Experimental design - Source: Own illustration based on Cantoni et. al.
 
 </center>
@@ -272,7 +273,7 @@ Before we begin with the analysis we need to prepare our data. The data set *pro
 
 ```{r "4_2"}
 #Fill in the blanks
-data<-___("data/protests_as_strategic_games.dta")
+data<-___("protests_as_strategic_games.dta")
 ```
 
 Now that we have successfully read the file, let us take a brief look at data. A quick and easy way of gaining an overview is to use the `head()` function in base R. 
@@ -502,7 +503,7 @@ Before we start, we need to load the data set again. From now on, we will be usi
 
 The prepared data set is stored as an *.RDS* file, which means we are going to use the `base` *R* function readRDS() to access it.
 
-**Task:** Use `readRDS()` to load `dat.RDS` from the data folder and save it in `data`
+**Task:** Use `readRDS()` to load `dat.RDS` and save it in `data`
 
 ```{r "5_1"}
 # Enter your code here.
@@ -1155,7 +1156,7 @@ Before we begin we need to load the data set again.
 **Task:** Check the chunk to load the data set.
 
 ```{r "6_1"}
-data<-readRDS("data/data2.RDS")
+data<-readRDS("data2.RDS")
 ```
 
 First of all, let us check how many of the students from our sample actually participated.
@@ -1658,7 +1659,7 @@ First and foremost, we need to load the data set again, reducing it to the exper
 **Task:** Check the chunk to prepare the experimental data.
 
 ```{r "7_1"}
-dat<-readRDS("data/data2.RDS")%>%
+dat<-readRDS("data2.RDS")%>%
   filter(followup_postjuly1st_w3 == 1 & !is.na(posterior_belief_part_hkust))
 ```
 
@@ -1961,7 +1962,7 @@ Load the data set again and prepare the experimental sample in the chunk below.
 **Task:** Check the chunk.
 
 ```{r "10_1"}
-data <- readRDS("data/data2.rds")
+data <- readRDS("data2.rds")
 dat<-data%>%
   filter(followup_postjuly1st_w3 == 1 & !is.na(posterior_belief_part_hkust))
 ```

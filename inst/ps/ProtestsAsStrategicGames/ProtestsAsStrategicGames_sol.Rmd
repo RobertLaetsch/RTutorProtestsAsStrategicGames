@@ -246,6 +246,7 @@ The experiment is designed to isolate the causal effect of variation in beliefs 
 
 ![Experimental Design](Experimental_Design.jpeg){width=80%, height = 80%}
 
+
 Experimental design - Source: Own illustration based on Cantoni et. al.
 
 </center>
@@ -290,9 +291,9 @@ library(haven)
 ```{r}
 #< fill_in
 #Fill in the blanks
-data<-___("data/protests_as_strategic_games.dta")
+data<-___("protests_as_strategic_games.dta")
 #>
-data<-read_dta("data/protests_as_strategic_games.dta")
+data<-read_dta("protests_as_strategic_games.dta")
 ```
 
 Now that we have successfully read the file, let us take a brief look at data. A quick and easy way of gaining an overview is to use the `head()` function in base R. 
@@ -598,14 +599,14 @@ Before we start, we need to load the data set again. From now on, we will be usi
 
 The prepared data set is stored as an *.RDS* file, which means we are going to use the `base` *R* function readRDS() to access it.
 
-**Task:** Use `readRDS()` to load `dat.RDS` from the data folder and save it in `data`
+**Task:** Use `readRDS()` to load `dat.RDS` and save it in `data`
 
 ```{r}
 #< task
 
 #>
 
-data<-readRDS("data/dat.RDS")
+data<-readRDS("dat.RDS")
 ```
 
 ## Descriptive statistics
@@ -1428,7 +1429,7 @@ Before we begin we need to load the data set again.
 
 ```{r}
 #< task_notest
-data<-readRDS("data/data2.RDS")
+data<-readRDS("data2.RDS")
 #>
 ```
 
@@ -2052,7 +2053,7 @@ First and foremost, we need to load the data set again, reducing it to the exper
 
 ```{r}
 #< task_notest
-dat<-readRDS("data/data2.RDS")%>%
+dat<-readRDS("data2.RDS")%>%
   filter(followup_postjuly1st_w3 == 1 & !is.na(posterior_belief_part_hkust))
 #>
 ```
@@ -2393,7 +2394,7 @@ Load the data set again and prepare the experimental sample in the chunk below.
 
 ```{r}
 #< task_notest
-data <- readRDS("data/data2.rds")
+data <- readRDS("data2.rds")
 dat<-data%>%
   filter(followup_postjuly1st_w3 == 1 & !is.na(posterior_belief_part_hkust))
 #>

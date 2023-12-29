@@ -1,19 +1,17 @@
 This package constitutes an interactive R problem set based on the RTutor package (https://github.com/skranz/RTutor). 
 
-Welcome to this RTutor problem set! In this interactive Analysis we are going to take a look at the antiauthoritarian movement in Hong Kong to better understand the strategic nature of protests and the underlying motivations driving participants. This problem set is based on the academic paper “Protests as Strategic Games: Experimental Evidence from Hong Kong’s Antiauthoritarian Movement” by Davide Cantoni, David Y. Yang, Noam Yuchtman and Y. Jane Zhang, which was published in the Quarterly Journal of Economics in 2019. You can find the original article here: https://academic.oup.com/qje/article/134/2/1021/5298503#133113512.
+--- Add **brief** description of content and link to original paper ---
 
 ## 1. Installation
 
 RTutor and this package is hosted on Github. To install everything, run the following code in your R console.
 ```s
-options(repos = c(skranz = 'https://skranz.r-universe.dev',
-    CRAN = 'https://cloud.r-project.org'))
-install.packages("RTutor")
+install.packages("RTutor",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
 
 if (!require(devtools))
   install.packages("devtools")
 
-devtools::install_github("RobertLaetsch/RTutorProtestsAsStrategicGames")
+devtools::install_github("RobertLaetsch/ProtestsAsStrategicGames")
 ```
 
 ## 2. Show and work on the problem set
