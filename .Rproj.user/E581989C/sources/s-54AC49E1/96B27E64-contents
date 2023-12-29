@@ -6,7 +6,9 @@ Welcome to this RTutor problem set! In this interactive Analysis we are going to
 
 RTutor and this package is hosted on Github. To install everything, run the following code in your R console.
 ```s
-install.packages("RTutor",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
+options(repos = c(skranz = 'https://skranz.r-universe.dev',
+    CRAN = 'https://cloud.r-project.org'))
+install.packages("RTutor")
 
 if (!require(devtools))
   install.packages("devtools")

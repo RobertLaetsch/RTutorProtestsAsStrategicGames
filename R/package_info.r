@@ -3,7 +3,7 @@ ps.pkg.info = function() {
   package = "ProtestsAsStrategicGames"
   
   # Name of problem sets in the package
-  ps = c("Protests-as-Strategic-Games")
+  ps = c("ProtestsAsStrategicGames")
   
   list(package=package, ps = ps)
 }
