@@ -181,7 +181,7 @@ Survey results from this experiment on student's perception of cost and benefit 
 
 **Task:** Check the chunk below.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 library(dplyr)
 library(ggplot2)
@@ -653,7 +653,7 @@ For an example on how to use the function and `ggplot` in general, check the chu
 
 **Task:** Click `check` to load the `ggplot2` package and plot the density of `prior_belief_part_hkust`.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 library(ggplot2)
 
@@ -675,7 +675,7 @@ In order to observe the information treatment effect, we now need to compare the
 
 **Task:** Fill in the blanks to add the density of `posterior_belief_part_hkust` for control and treatment group respectively.
 
-```{r}
+```{r fig.cap=""}
 #< fill_in
 ggplot()+
   geom_density(data = dat, ___(x = prior_belief_part_hkust, colour = "Prior to follow-up"), size = 1)+
@@ -738,7 +738,7 @@ Now we can plot the change of belief for each individual from the treatment grou
 
 **Task:** Fill in the blanks to create a scatterplot with `belief_planned_part_hkust` on the x-axis and `belief_change` on the y-axis.
 
-```{r}
+```{r fig.cap=""}
 #< fill_in
 ggplot(data = filter(data, treat == 1), aes(x = ___, y = ___))+
   ___()+
@@ -756,6 +756,8 @@ ggplot(data = filter(data, treat == 1), aes(x = belief_planned_part_hkust, y = b
        y = "Change in belief after treatment") 
 
 ```
+
+<br/>
 
 In its current form, the graph looks cluttered. Even though the underlying trends are somewhat observable interpreting it won't yield great results.
 
@@ -818,7 +820,7 @@ Now plot the result for the treatment group in a simple scatterplot once again, 
 
 **Task:** Fill in the blanks to create the scatterplot.
 
-```{r}
+```{r fig.cap=""}
 #< fill_in
 reg_treat <- lm(belief_change ~ belief_planned_part_hkust, data = filter (data, treat == 1))
 
@@ -855,6 +857,8 @@ ggplot(data = filter(dat, treat == 1), aes(x = belief_planned_part_hkust, y = be
   theme_classic()
 ```
 
+<br/>
+
 The **binned scatterplot** we just created shows the average changes in belief, regarding actual protest turnout among HKUST survey participants, who received informational treatment for each of the 17 quantiles of prior belief on planned participation.
 When examining the distribution of the participants beliefs earlier, we already saw a trend towards the true 17%. The **binned scatterplot** now confirms, that we are indeed dealing with **offsetting treatment effects**: This means that the sign of the treatment effect varies within the experimental sample. Subjects from the treatment group whose prior guess was below the actual planned participation consistently updated their beliefs positively. Similarly, students whose prior guess was above the information provided updated their beliefs negatively. If we were to estimate an average treatment effect, the subgroups coefficients might cancel each other out and the treatment effect might be estimated to be 0, even though we observe a significant shift in beliefs above. 
 
@@ -871,7 +875,7 @@ failure: Try again.
 
 **Task:** Check the chunk below to plot both groups together.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 ggplot(data = dat, aes(x = belief_planned_part_hkust, y = belief_change))+
   geom_point()+
@@ -886,6 +890,8 @@ ggplot(data = dat, aes(x = belief_planned_part_hkust, y = belief_change))+
   facet_wrap(vars(group))
 #>
 ```
+
+<br/>
 
 **Note:** As the number of bins was not specified in the replication file, the graph slightly differs from the original in the paper.
 
@@ -918,7 +924,7 @@ For an overview of the change of beliefs for control and treatment group depende
 
 **Task:** Check the chunk to plot the graph.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 dat<-data%>%
   mutate(belief_part_a17 = ifelse(belief_planned_part_hkust >= 17, prior_belief_part_hkust, NA),
@@ -1381,7 +1387,7 @@ failure: Try again.
 
 **Task:** Check the chunk to plot the distribution of t statistics.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 randomization_1ststage_inference <- readRDS("random_1ststage_inference.rds")
 
@@ -1477,7 +1483,7 @@ We can visualize the average turnout in each of the respective groups, by creati
 
 **Task:** Check the chunk below.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 dat$id <- 1:4
 
@@ -1669,9 +1675,9 @@ We plot the density of the t-statistics again and compare the distribution with 
 
 **Task:** Check the chunk to plot the results of the randomized inference.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
-randomization_reducedform_inference<-readRDS("data/random_reducedform_inference.rds")
+randomization_reducedform_inference<-readRDS("random_reducedform_inference.rds")
 
 plt1<-randomization_reducedform_inference%>%
   ggplot(aes(x = t_below)) + 
@@ -1848,7 +1854,7 @@ Now that we have got the data ready, we can plot `diff` as our treatment effect 
 
 **Task:** Check the chunk to plot the results.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 dat_agg$bin_name <- seq(0, 30, 5)
 
@@ -1866,6 +1872,8 @@ ggplot(data = dat_agg, aes(x = bin_name, y = diff))+
   theme_classic()
 #>
 ```
+
+<br/>
 
 **Note:** In the original paper the authors wrote that 95% confidence intervals were used for this figure. However, looking into the stata replication files reveals, that 90% confidence intervals were used instead. We still use 95% confidence intervals as specified in the text, so this graph does not exactly match the original.
 
@@ -1939,7 +1947,7 @@ The coefficient of our interaction term measures the change in the effect of tre
 
 **Task:** Check the chunk to add the regression results to the plot from earlier.
 
-```{r}
+```{r fig.cap=""}
 #< task_notest
 ggplot(data = dat_agg, aes(x = bin_name, y = diff))+
   geom_point()+
@@ -1954,6 +1962,8 @@ ggplot(data = dat_agg, aes(x = bin_name, y = diff))+
   theme_classic()
 #>
 ```
+
+<br/>
 
 As you can see, the results from the regression roughly fit a line through the bins we created in figure 8. 
 

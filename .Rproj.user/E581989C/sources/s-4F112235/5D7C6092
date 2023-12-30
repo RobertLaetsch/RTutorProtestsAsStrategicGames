@@ -1,24 +1,24 @@
 {
-    "id": "A2C7CB8A",
-    "path": "~/Downloads/06_Deploy problem set on shinyapps.io.Rmd",
+    "id": "5D7C6092",
+    "path": "~/Downloads/05_Deploy Problem Sets as Package on Github.Rmd",
     "project_path": null,
     "type": "r_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1703677763020.0,
+    "created": 1703677762525.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 1,
     "properties": {
-        "cursorPosition": "54,0",
-        "scrollLine": "35"
+        "cursorPosition": "55,3",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1703670562,
+    "lastKnownWriteTime": 1703945640,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1703670562,
+    "last_content_update": 1703945640212,
     "read_only": false,
     "read_only_alternatives": []
 }
