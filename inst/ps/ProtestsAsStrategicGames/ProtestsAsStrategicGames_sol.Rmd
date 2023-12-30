@@ -1383,7 +1383,7 @@ failure: Try again.
 
 ```{r}
 #< task_notest
-randomization_1ststage_inference <- readRDS("data/random_1ststage_inference.rds")
+randomization_1ststage_inference <- readRDS("random_1ststage_inference.rds")
 
 plt1<-randomization_1ststage_inference%>%
   ggplot(aes(x = t_below)) + 
