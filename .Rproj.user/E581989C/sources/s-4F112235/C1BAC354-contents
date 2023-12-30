@@ -11,7 +11,7 @@ devtools::install_github("RobertLaetsch/RTutorProtestsAsStrategicGames")
 library(ProtestsAsStrategicGames)
 
 # Adapt your working directory to an existing folder
-setwd("/Users/robert/Desktop/test")
+setwd("/Users/robert/Desktop/Test")
 # Adapt your user name
 run.ps(user.name="Jon Doe", package="ProtestsAsStrategicGames",
        auto.save.code=TRUE, clear.user=FALSE)

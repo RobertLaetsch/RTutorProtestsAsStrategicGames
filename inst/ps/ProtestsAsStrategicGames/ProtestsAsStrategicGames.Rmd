@@ -19,7 +19,7 @@ in 2019. The article can be found [here](https://academic.oup.com/qje/article/13
 The problem set is available on ShinyApps and in the form of a package hosted via github:
 
 * `GitHub`: <https://github.com/RobertLaetsch/RTutorProtestsAsStrategicGames>
-* `ShinyApps`: <https://robertlae.shinyapps.io/ProtestAsStrategicAGames/>
+* `ShinyApps`: <https://robertlae.shinyapps.io/ProtestsAsStrategicGames/>
 
 **Note:** Please open the links in this problem set in a separate tab, as you might lose the progress you have made in the problem set up until that point.
 
@@ -1977,7 +1977,7 @@ Load the data set again and prepare the experimental sample in the chunk below.
 **Task:** Check the chunk.
 
 ```{r "10_1"}
-data <- readRDS("data2.rds")
+data <- readRDS("data2.RDS")
 dat<-data%>%
   filter(followup_postjuly1st_w3 == 1 & !is.na(posterior_belief_part_hkust))
 ```

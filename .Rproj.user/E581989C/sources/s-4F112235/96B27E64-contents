@@ -3,7 +3,7 @@ This package constitutes an interactive R problem set based on the RTutor packag
 Welcome to this RTutor problem set! In this interactive Analysis we are going to take a look at the antiauthoritarian movement in Hong Kong to better understand the strategic nature of protests and the underlying motivations driving participants. This problem set is based on the academic paper “Protests as Strategic Games: Experimental Evidence from Hong Kong’s Antiauthoritarian Movement” by Davide Cantoni, David Y. Yang, Noam Yuchtman and Y. Jane Zhang, which was published in the Quarterly Journal of Economics in 2019. You can find the original article here: https://academic.oup.com/qje/article/134/2/1021/5298503#133113512.
 
 The problem set is also available on ShinyApps:
-https://robertlae.shinyapps.io/ProtestAsStrategicAGames/
+https://robertlae.shinyapps.io/ProtestsAsStrategicGames/
 
 If you want to run the problem set in package form, follow the instructions below.
 
