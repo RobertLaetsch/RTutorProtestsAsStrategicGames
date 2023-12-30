@@ -15,7 +15,7 @@ run=function(){
   ps.name = "ProtestsAsStrategicGames"
   
   #set required libraries
-  libs = c("tidyr", "haven","ggplot2", "dplyr", "modelsummary","kableExtra", "glueformula", "estimatr", "gridExtra")
+  libs = c("tidyr", "haven","ggplot2", "dplyr", "modelsummary","kableExtra", "glueformula", "estimatr", "gridExtra", "sandwich")
   
   #create problem set
   create.ps(sol.file = paste0(ps.name,"_sol.Rmd"), ps.name=ps.name, user.name = NULL, libs=libs, stop.when.finished=FALSE, addons = "quiz")

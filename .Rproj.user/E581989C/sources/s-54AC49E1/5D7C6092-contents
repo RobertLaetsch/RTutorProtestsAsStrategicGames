@@ -33,7 +33,7 @@ The RTutor package has a function `rtutor.package.skel` that creates a package s
   setwd("/Users/robert/Dokumente/BA/newps/")
 
  #set required libraries
-  libs = c("tidyr", "haven","ggplot2", "dplyr", "modelsummary","kableExtra", "glueformula", "estimatr", "gridExtra")
+  libs = c("tidyr", "haven","ggplot2", "dplyr", "modelsummary","kableExtra", "glueformula", "estimatr", "gridExtra", "sandwich")
   
   #set the name of the problem set
   ps.name = "ProtestsAsStrategicGames"

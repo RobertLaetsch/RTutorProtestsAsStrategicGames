@@ -5,12 +5,12 @@
     "type": "r_markdown",
     "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1703677762525.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "55,0",
+        "cursorPosition": "55,3",
         "scrollLine": "36"
     },
     "folds": "",
@@ -18,7 +18,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1703939814710,
+    "last_content_update": 1703943151307,
     "read_only": false,
     "read_only_alternatives": []
 }
