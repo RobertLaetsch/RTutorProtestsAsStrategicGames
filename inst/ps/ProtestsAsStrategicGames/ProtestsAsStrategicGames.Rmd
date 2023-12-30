@@ -172,7 +172,7 @@ Survey results from this experiment on student's perception of cost and benefit 
 ```{r "3_1"}
 library(dplyr)
 library(ggplot2)
-dat<-readRDS("data/dat.RDS")
+dat<-readRDS("dat.RDS")
 
 var_list <- c("prot_crackdown_10000_w3", "prot_crackdown_50000_w3","prot_crackdown_250000_w3", "prot_crackdown_1250000_w3", "prot_democracy_10000_w3", "prot_democracy_50000_w3", "prot_democracy_250000_w3", "prot_democracy_1250000_w3")
 

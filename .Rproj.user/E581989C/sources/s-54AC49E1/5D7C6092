@@ -3,22 +3,22 @@
     "path": "~/Downloads/05_Deploy Problem Sets as Package on Github.Rmd",
     "project_path": null,
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "4282871677",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1703677762525.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "55,0",
-        "scrollLine": "36"
+        "cursorPosition": "60,0",
+        "scrollLine": "38"
     },
     "folds": "",
-    "lastKnownWriteTime": 1703858232,
+    "lastKnownWriteTime": 1703939814,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1703869904705,
+    "last_content_update": 1703939814710,
     "read_only": false,
     "read_only_alternatives": []
 }
