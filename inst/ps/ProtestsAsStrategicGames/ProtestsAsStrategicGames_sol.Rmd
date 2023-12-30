@@ -33,6 +33,11 @@ to better understand the strategic nature of protests and the underlying motivat
 This problem set is based on the academic paper **"Protests as Strategic Games: Experimental Evidence from Hong Kong's Antiauthoritarian Movement"** by Davide Cantoni, David Y. Yang, Noam Yuchtman and Y. Jane Zhang, which was published in the Quarterly Journal of Economics
 in 2019. The article can be found [here](https://academic.oup.com/qje/article/134/2/1021/5298503#133113512). 
 
+The problem set is available on ShinyApps and in the form of a package hosted via github:
+
+* `GitHub`: <https://github.com/RobertLaetsch/RTutorProtestsAsStrategicGames>
+* `ShinyApps`: <https://robertlae.shinyapps.io/ProtestAsStrategicAGames/>
+
 **Note:** Please open the links in this problem set in a separate tab, as you might lose the progress you have made in the problem set up until that point.
 
 The decision to protest has long been perceived as a strategic game, with an individuals motivation being dependent on their beliefs regarding others attendance. The question is, whether higher beliefs on turnout increase or decrease participation when looking at antiauthoritarian movements in particular. There is a solid case to be made for both assumptions, as we might be dealing with a classic  collective action problem, with some **free-riding** and profiting from other peoples costly participation. On the other hand, the larger the protest the higher the chances of achieving the movements goals. Moreover, the more people on the streets, the smaller the chances of government intervention and personal sanctions. Thus, other people's attendance could also motivate others to join them.
